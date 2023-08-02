@@ -1,6 +1,7 @@
 const modoDev = process.env.NODE_ENV !== 'production'
 const path = require('path');
-const webpack = require('webpack')
+const {webpack,ProvidePlugin} = require('webpack')
+const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin");
 // unificar arquivos
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
@@ -10,13 +11,9 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 module.exports = {
   mode: modoDev ? 'development' : 'production',
   entry:'./src/index.js', //ponto de entrada
-  output: {
-      filename: 'app.js', // nomedo arquivo raiz
-      path: __dirname + '/dist',  // caminho onde sera jogado arquivo
-  },
   devServer: {
     static: {
-      directory: path.join(__dirname, 'dist'),
+      directory: path.join(__dirname, 'public'),
     },
     compress: true,
     port: 9000,
@@ -28,16 +25,21 @@ module.exports = {
         terserOptions: {
             ecma: 6,
         },
+        test: /\.js(\?.*)?$/i,
     }),
+    new HtmlMinimizerPlugin(),
     new CssMinimizerPlugin({})
     ]
-  },
+  }, output: {
+    filename: 'app.js', // nome do arquivo raiz
+    path: __dirname + '/public',  // caminho onde sera jogado arquivo
+},
       // area de plugin
   plugins: [
       // função construtora recebe obj com parametros
       new MiniCssExtractPlugin({
         // recebe nome do arq q quero criar e gerado
-         filename: 'css/style.css',  // proriedade
+         filename: 'style.css',  // proriedade
         
       }),
       new CopyWebpackPlugin({
@@ -45,6 +47,10 @@ module.exports = {
           {context:'src/',from: '**/*.html'},
           {context:'src/',from: 'imgs/**/*'}
         ]
+      }),
+      new ProvidePlugin({
+        identifier: ['module1', 'property1'],
+        // ...
       })
   ],
   module:{   // regras - loader
@@ -62,7 +68,10 @@ module.exports = {
     },{
       test: /.(ttf|otf|eot|svg|woff(2)?)$/,
       use:['file-loader']
-    } 
+    },{
+      test:/\.js$/,
+        use:['babel-loader']
+    }
   ]
   }
 }
