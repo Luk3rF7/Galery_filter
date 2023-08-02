@@ -2,7 +2,7 @@
   "name": "img_filtro",
   "version": "1.0.0",
   "repository": {
-    "url": "git+https://github.com/Luk3rF7/filtro_Galeria.git"
+    "url": "git+https://github.com/Luk3rF7/Galery_filter.git"
   },
   "description": "filtro de imagem com jquery,bootstrap e webpack",
   "main": "main.js",
