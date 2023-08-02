@@ -657,14 +657,14 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 
 /***/ }),
 
-/***/ "./src/css/index.scss":
+/***/ "./src/css/style.scss":
 /*!****************************!*\
-  !*** ./src/css/index.scss ***!
+  !*** ./src/css/style.scss ***!
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://img_filtro/./src/css/index.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://img_filtro/./src/css/style.scss?");
 
 /***/ }),
 
@@ -675,7 +675,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/index.scss */ \"./src/css/index.scss\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var _js_core_includes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/core/includes */ \"./src/js/core/includes.js\");\n/* harmony import */ var _js_plugin_cityButtons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/plugin/cityButtons */ \"./src/js/plugin/cityButtons.js\");\n// arquivo SASS \r\n\r\n\r\n\r\n// importar dependencia\r\n\r\n\r\n\r\n//meu arq js\r\n\r\n\r\n\n\n//# sourceURL=webpack://img_filtro/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.scss */ \"./src/css/style.scss\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var _js_core_includes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/core/includes */ \"./src/js/core/includes.js\");\n/* harmony import */ var _js_plugin_cityButtons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/plugin/cityButtons */ \"./src/js/plugin/cityButtons.js\");\n// arquivo SASS \r\n\r\n\r\n\r\n// importar dependencia\r\n\r\n\r\n\r\n//meu arq js\r\n\r\n\r\n\n\n//# sourceURL=webpack://img_filtro/./src/index.js?");
 
 /***/ }),
 
