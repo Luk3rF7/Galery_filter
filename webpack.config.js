@@ -1,6 +1,6 @@
 const modoDev = process.env.NODE_ENV !== 'production'
 const path = require('path');
-const {webpack,ProvidePlugin} = require('webpack')
+const webpack = require('webpack')
 const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin");
 // unificar arquivos
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
@@ -27,7 +27,7 @@ module.exports = {
         },
         test: /\.js(\?.*)?$/i,
     }),
-    new HtmlMinimizerPlugin(),
+    new HtmlMinimizerPlugin({}),
     new CssMinimizerPlugin({})
     ]
   }, output: {
@@ -48,10 +48,11 @@ module.exports = {
           {context:'src/',from: 'imgs/**/*'}
         ]
       }),
-      new ProvidePlugin({
+      new webpack.ProvidePlugin({
         identifier: ['module1', 'property1'],
-        // ...
-      })
+        $: 'jquery',
+        JQuery: 'jquery',
+      }),
   ],
   module:{   // regras - loader
     rules: [
