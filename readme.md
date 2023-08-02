@@ -1,7 +1,8 @@
 <h1 align="center"> Filtro de Galeria</h1>
  <div>
   <h2> Para inicializar aplicação Siga etapas :</h2> 
-  
+
+  <li>baixe arquivo ou faça gitclone do repositorio depois descompacte ou 👇</li>
   <li>entre no terminal do Vscode com caminho da pasta:</li>
  <li>De comando npm i para baixa as dependencias </li>
  <li>Depois npm start </li>
