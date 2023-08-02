@@ -1,6 +1,6 @@
 // arquivo SASS 
 
-import './css/index.scss'
+import './css/style.scss'
 
 // importar dependencia
 import'jquery'

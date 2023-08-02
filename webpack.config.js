@@ -12,11 +12,11 @@ module.exports = {
   entry:'./src/index.js', //ponto de entrada
   output: {
       filename: 'app.js', // nomedo arquivo raiz
-      path: __dirname + '/doc',  // caminho onde sera jogado arquivo
+      path: __dirname + '/dist',  // caminho onde sera jogado arquivo
   },
   devServer: {
     static: {
-      directory: path.join(__dirname, '/doc'),
+      directory: path.join(__dirname, 'dist'),
     },
     compress: true,
     port: 9000,
@@ -37,7 +37,7 @@ module.exports = {
       // função construtora recebe obj com parametros
       new MiniCssExtractPlugin({
         // recebe nome do arq q quero criar e gerado
-         filename: './css/style.css',  // proriedade
+         filename: 'css/style.css',  // proriedade
         
       }),
       new CopyWebpackPlugin({
