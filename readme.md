@@ -1,7 +1,14 @@
 <h1 align="center"> Filtro de Galeria</h1>
  <h3>Projeto contem base e fundamento da junção dos 3 tecnologia junto com front end </h3>
- <hr>
- <a href="https://luk3rf7.github.io/filtro_Galeria/"> Filtro Galeria link </a>
+
+ <div>
+  <h2> Para inicializar aplicação Siga etapas :</h2> 
+  
+  <li>entre no terminal do Vscode com caminho da pasta:</li>
+ <li>De comando npm i para baixa as dependencias </li>
+ <li>Depois npm start </li>
+ <li>local do endereço : http:localhost:9000</li>
+ </div>
 </section>
 <hr>
 <section style="font-size:18px;">
