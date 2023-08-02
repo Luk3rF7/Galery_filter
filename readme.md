@@ -1,6 +1,4 @@
 <h1 align="center"> Filtro de Galeria</h1>
- <h3>Projeto contem base e fundamento da junção dos 3 tecnologia junto com front end </h3>
-
  <div>
   <h2> Para inicializar aplicação Siga etapas :</h2> 
   
